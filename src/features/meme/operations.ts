@@ -46,7 +46,8 @@ export const generateSituationMeme: GenerateSituationMeme<MemeGenerationInput, M
   console.log(`No recent cache found. Generating new analysis for @${args.handle}.`);
 
   // 2. If no cache, proceed with fetching and analysis
-  const rettiwt = new Rettiwt();
+  const rettiwt = new Rettiwt({ apiKey: process.env.RETTIWT_API_KEY });
+  
 
   try {
     const userDetailsResult = await rettiwt.user.details(args.handle);
