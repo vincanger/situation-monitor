@@ -80,18 +80,18 @@ const MemeDisplay = forwardRef<HTMLDivElement, MemeData>(({ imageName, topText, 
   const imageUrl = imageMap[imageName];
 
   return (
-    <div ref={ref} className="meme-container">
-      <div className="relative">
-        <img src={imageUrl} alt="Generated meme" className="border-x border-t w-full" crossOrigin="anonymous" />
-        <div className="meme-text top-2">{topText}</div>
-        <div className="meme-text bottom-2">{bottomText}</div>
+    <div ref={ref} className='meme-container'>
+      <div className='relative'>
+        <img src={imageUrl} alt='Generated meme' className='border-x border-t w-full' crossOrigin='anonymous' />
+        <div className='meme-text top-2'>{topText}</div>
+        <div className='meme-text bottom-2'>{bottomText}</div>
       </div>
-      <div className="bg-black text-white p-2 flex items-center justify-between">
-        <div className="flex items-center">
-          <img src={profileImageUrl} alt="User profile" className="w-8 h-8 rounded-full mr-2" crossOrigin="anonymous" />
-          <span className="font-semibold text-sm">@{handle}</span>
+      <div className='bg-black text-white p-2 flex items-center justify-between'>
+        <div className='flex items-center'>
+          <img src={profileImageUrl} alt='User profile' className='w-8 h-8 rounded-full mr-2' crossOrigin='anonymous' />
+          <span className='font-semibold text-sm'>@{handle}</span>
         </div>
-        <span className="text-sm font-mono">situation-monitor.com</span>
+        <span className='text-sm font-mono'>sit-mon-client.fly.dev</span>
       </div>
     </div>
   );
